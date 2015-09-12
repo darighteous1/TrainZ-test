@@ -13,6 +13,9 @@ public class GameScreen extends StackPane {
     // I want to create a separate class for each screen (Game and Menu for starters, later maybe Highscore screen)
     // but I am not sure if this is the correct way to do it
     // I decided to use singleton GameScreen to prevent resetting the game screen if i go to the menu screen and then back to the game screen
+    // I am sure there is a better way to organize this but this is what came to my mind
+    // My idea is that when you call the screen manager it creates or loads the respective screen (e.g. create a scene to be drawn)
+    // or something like that. I got completely lost here.
 
     private static GameScreen instance;
 

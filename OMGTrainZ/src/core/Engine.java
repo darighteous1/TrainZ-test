@@ -40,6 +40,12 @@ public class Engine implements Runnable {
     }
 
     private void loadContent() {
+
+        // I was thinking to store all assets that should be drawn on the screen in some type of List
+        // add them to the respective screen (Game or Menu)
+        // and in the draw method just call the ScreenManager.getInstance().currentScreen and tell it to draw its contents
+        // but I am not sure how to do this with JavaFX
+
         try {
             this.assets = AssetManager.INSTANCE.cache();
             assets.logCached();
@@ -53,7 +59,7 @@ public class Engine implements Runnable {
     }
 
     private void draw() {
-
+        //
     }
 
 
